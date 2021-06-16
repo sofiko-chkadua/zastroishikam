@@ -1,0 +1,73 @@
+.card {
+    width: 32%;
+    border: 1px solid #B0B0B0;
+    background-image: url(../../img/card1.png);
+    padding: 40px 30px 30px 30px;
+    
+}
+
+.card__title {
+    margin: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 0.01em;
+color: #F5E6D1;
+margin-top: 31px;
+margin-bottom: 25px;
+font-family: "Graphik LCG", Arial, sans-serif;
+}
+
+.card__type {
+    font-family: "Graphik LCG", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 150%;    
+    letter-spacing: 0.01em;
+    color: #B0B0B0;
+}
+
+.card__priceContainer {
+    background: linear-gradient(0deg, #F5E6D1, #F5E6D1), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.card__descr {
+    font-family: "Graphik LCG", Arial, sans-serif;
+    font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: #FFFFFF;
+margin: 0;
+margin-bottom: 15px;
+}
+
+.card__descr_oth {
+    margin-bottom: 144px; 
+}
+
+.card__button {
+    background: transparent;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 64px;
+    text-decoration: none;
+    display: block;
+}
+
+.card__priceContainer {
+    margin-bottom: 10px;
+}

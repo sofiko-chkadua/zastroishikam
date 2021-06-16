@@ -1,0 +1,247 @@
+/* input, textarea, select {
+    -webkit-appearance: none;
+} */
+
+.form {
+    /* margin: 0 auto; */
+    overflow: hidden;
+    width: 45%;
+    padding-top: 30px;
+}
+
+.form * {
+    outline: none;
+}
+
+.form__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* max-width: 940px;
+    width: 100%; */
+}
+
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form__button[disabled] {
+    background: #CD5B37;
+}
+
+.form__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: -14px;
+    margin-bottom: 30px;
+}
+
+.form__item {
+    position: relative;
+}
+
+.form__input {
+    -webkit-appearance: none;
+    height: 60px;
+    padding-left: 30px;
+    width: 300px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    letter-spacing: 0.03em;
+    border: 1px solid #5A6379;
+    color: #FFFFFF;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    border-radius: initial;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    margin-bottom: 25px;
+}
+
+.form__input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-align: left;
+}
+
+.form__politic {
+    margin: 0;
+    /* margin-bottom: 50px; */
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 25px;
+}
+
+.form__link-politic {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.form__link-politic:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.form__input._error {
+    border: 1px solid #dd2a2a;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #dd2a2a;
+}
+
+.textarea.form__input {
+    min-height: 120px;
+    resize: vertical;
+    padding: 20px;
+}
+
+.form__button {
+    width: 300px;
+    min-height: 60px;
+  background-color: #fff;
+    padding: 0;
+    color: #010B24;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.form__button:hover {
+    background-color: #F5E6D1;
+}
+
+.form__button:active {
+    background-color: #F5E6D1;
+}
+
+.form__button:focus {
+    background-color: #F5E6D1;
+}
+
+.form__par {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form__error {
+    display: block;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #dd2a2a;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.form__error_hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1191px) {
+    .form {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+    .form__politic {
+        margin-bottom: 0px;
+        text-align: left;
+        font-size: 11px;
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* .form  {
+      padding-left: 10px;
+      padding-right: 10px;
+    } */
+    .form__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__input {
+        margin-bottom: 25px;
+        /* padding-left: 0; */
+        text-align: left;
+    }
+    .form__header {
+        text-align: center;
+    }
+    .form__subheader {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .form__input::placeholder {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .form__header {
+        font-size: 40px;
+    }
+  
+  .form__input::placeholder {
+
+    text-align: left;
+}
+  
+    .form__subheader {
+        width: 73%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+  .form__politic {
+ line-height: 150%;
+    font-size: 10px;
+  }
+  
+  .form__input {
+    text-align: left;
+      padding-left: 30px;
+}
+  
+  .form {
+        padding-top: 14%;
+
+  }
+}
+
+@media screen and (max-width: 340px) {
+    .form__header {
+        font-size: 30px;
+    }
+}
+
+.error-red {
+    border: 1px solid #dd2a2a;
+}

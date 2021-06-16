@@ -1,0 +1,51 @@
+.page {
+ font-family: "Graphik LCG", Arial, sans-serif;
+  color: white;
+  margin: 0 auto;
+  /* background: linear-gradient(
+123.14deg, #07080A -18.14%, #15171B 362.3%);  */
+background: linear-gradient(to bottom, #142040, #000a23);
+}
+
+
+
+.page__content {
+  max-width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 65px;
+  /* height: 100vh; */
+}
+
+@media screen and (max-width: 1191px) {
+  .page__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-top: 120px; */
+    padding-top: 185px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .page__subdiv{
+    background-image: url(../../img/backtouch.png);
+    margin-bottom: 110px;
+  }
+.page__content {
+  padding-left: 20px;
+  padding-right: 20px;
+    padding-top: 200px;
+}
+}
+
+@media screen and (max-width: 678px) {
+  .page__content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 85px;
+   }
+}
+@media screen and (max-width: 340px) {
+  .page__subdiv{
+    margin-bottom: 80px;
+  }
+}
